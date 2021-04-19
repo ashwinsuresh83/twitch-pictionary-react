@@ -1,0 +1,60 @@
+body {
+
+    background-image: url('https://www.godisageek.com/wp-content/uploads/Twitch.jpg');
+    background-position: center;
+    height: 800px;
+
+}
+
+
+.banner {
+
+    margin-left: 10px;
+    font-family:fantasy;
+    text-decoration: none;
+    display:inline-block;
+    
+}
+/* .logo{
+
+    border: 0px;
+    padding-bottom: 0%;
+    height: 40px;
+    width: 70px;
+} */
+.input-group{
+
+margin: 0 auto;
+
+width: 500px;
+  height: 50px;
+
+  box-sizing: border-box;
+
+}
+
+.ecn{
+    text-shadow: 2px 2px black;
+    color: aliceblue;
+    text-align: center;
+    font-size: 50px;
+
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+      
+}
+
+
+.cate{
+    padding-top: 200px;
+    color: aliceblue;
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+.navbar{
+    background-color: rgb(255, 255, 255,1);
+    height: 70px;
+}
