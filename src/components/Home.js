@@ -12,7 +12,7 @@ const Home=()=>  {
 
     
     return (
-        <div>
+        <div className="home__page">
             <div class="container">
     <h2 class="ecn">Enter your Twitch channel name:</h2>
     <div class="input-group mb-3">
@@ -50,6 +50,6 @@ const Home=()=>  {
 </div>
         )
     }
-    export default Home
+export default Home
     
 
