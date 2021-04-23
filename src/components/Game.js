@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import '../css/game.css'
-import '../css/home.css'
+
 const tmi = require('tmi.js');
 export default function Game() {
     const message=""
@@ -15,7 +15,7 @@ export default function Game() {
     
     client.on('message', (channel, tags, message, self) => {
 
-        // "Alca: Hello, World!"
+        
         message=`${tags['display-name']}: ${message}`
        
         document.querySelector('.message').innerText=message
@@ -24,11 +24,17 @@ export default function Game() {
     
     return (
         
-        <div class='home__page'>
+        <div className='game__page d-flex justify-content-center'>
             
-            <h1>{twitch__name}</h1>
-            <div>
-            <h3 className="message"> empty</h3>
+            <div className="word">
+                <h3>word</h3>
+            </div>
+            <div className="paint">
+                <h3>draw here</h3>
+                <h1>canvas</h1>
+            </div>
+            <div className='message'>
+            <h3> empty</h3>
             </div>
         </div>
     )
