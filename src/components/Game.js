@@ -38,7 +38,7 @@ export default function Game() {
                 <h1>canvas</h1>
 
             </div>
-            <div><DrawingBoard/></div>
+            <div><p></p></div>
             <div className='message'>
             <h3> empty</h3>
             </div>
