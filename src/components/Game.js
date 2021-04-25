@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import '../css/game.css'
+const DrawingBoard = require('react-drawing-board');
 
 const tmi = require('tmi.js');
 export default function Game() {
@@ -21,10 +22,13 @@ export default function Game() {
         document.querySelector('.message').innerText=message
 
     });
+
+
+    
     
     return (
         
-        <div className='game__page d-flex justify-content-center'>
+        <div className='game__page'>
             
             <div className="word">
                 <h3>word</h3>
@@ -32,10 +36,17 @@ export default function Game() {
             <div className="paint">
                 <h3>draw here</h3>
                 <h1>canvas</h1>
+
             </div>
+            <div><DrawingBoard/></div>
             <div className='message'>
             <h3> empty</h3>
             </div>
+           
+           
         </div>
+
+          
     )
+
 }
